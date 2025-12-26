@@ -8,6 +8,7 @@ Você terá 5 variáveis. Sendo elas:
 3 - O tipo de combustível que está no seu carro;
 4 - Gasto médio de combustível do carro por KM;
 5 - Distância em KM da viagem.
+
 */
 
 
@@ -21,8 +22,8 @@ if (!entradaTipo) {
 } else {
   const tipoCombustivel = entradaTipo.trim().toLowerCase();
 
-  const consumoKmPorLitro = 12; // seu carro faz 12 km por litro
-  const distanciaKm = 150;
+  const consumoKmPorLitro = Number(prompt('Digite o consumo médio de combustível do seu carro (km por litro): '));
+  const distanciaKm = Number(prompt('Digite a distância em KM da viagem: '));
 
   let precoCombustivel;
 
@@ -32,7 +33,6 @@ if (!entradaTipo) {
     precoCombustivel = precoEtanol;
   } else {
     alert("Tipo de combustível inválido. Use 'gasolina' ou 'etanol'.");
-    // não usa 'return' fora de função
     throw new Error("Tipo de combustível inválido.");
   }
 
