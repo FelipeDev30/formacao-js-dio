@@ -1,6 +1,7 @@
 peso = Number(prompt("Digite seu peso em kg:"));
 altura = Number(prompt("Digite sua altura em metros:"));
-imc = peso / (altura * altura);
+
+imc = peso / Math.pow(altura, 2);
 
 function arredondar(valor, casasDecimais) {
     const fator = Math.pow(10, casasDecimais);
