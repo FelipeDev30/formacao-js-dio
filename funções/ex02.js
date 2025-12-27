@@ -24,7 +24,7 @@ function calcularPrecoFinal(preco, formaPagamento) {
             precoFinal = aplicarJuros(preco, 0.1); // 10% de juros
             break;
         default:
-            alert("Forma de pagamento inválida.");
+            alert("Forma de pagamento inválida. Escolha uma opção entre 1 e 4.");
             return null;
     }
     return precoFinal;
