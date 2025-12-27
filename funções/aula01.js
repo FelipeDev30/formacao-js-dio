@@ -34,12 +34,10 @@ function calcularIMC() {
 }
 
 // Fluxo principal
-function main() {
+(function main() {
     const imcValue = calcularIMC();
     if (imcValue !== null) {
         const classificacao = classificarImc(imcValue);
         alert("Classificação do IMC: " + classificacao);
     }
-}
-
-main();
+})();
