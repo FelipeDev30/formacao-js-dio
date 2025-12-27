@@ -14,7 +14,7 @@ function classificarImc(imc) {
     }
 }
 
-function main() {
+function calcularIMC() {
     const peso = Number(prompt("Digite seu peso em kg:").replace(",", "."));
     const altura = Number(prompt("Digite sua altura em metros:").replace(",", "."));
 
@@ -34,9 +34,12 @@ function main() {
 }
 
 // Fluxo principal
-const imcValue = main();
-if (imcValue !== null) {
-    const classificacao = classificarImc(imcValue);
-    alert("Classificação do IMC: " + classificacao);
+function main() {
+    const imcValue = calcularIMC();
+    if (imcValue !== null) {
+        const classificacao = classificarImc(imcValue);
+        alert("Classificação do IMC: " + classificacao);
+    }
 }
 
+main();
