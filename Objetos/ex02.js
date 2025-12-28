@@ -17,26 +17,30 @@ class Pessoa {
 
     calcularIMC(imc) {
         imc = this.peso / (Math.pow(this.altura, 2));
-        if(imc < 18.5 ) {
+        if (imc < 18.5) {
             return `${this.nome}, seu IMC é ${imc.toFixed(2)} e você está abaixo do peso.`;
         }
-        if(imc >= 18.5 && imc < 25) {
+        if (imc >= 18.5 && imc < 25) {
             return `${this.nome}, seu IMC é ${imc.toFixed(2)} e você está no peso ideal.`;
         }
-        if(imc >= 25 && imc < 30) {
+        if (imc >= 25 && imc < 30) {
             return `${this.nome}, seu IMC é ${imc.toFixed(2)} e você está acima do peso.`;
         }
-        if(imc >= 30 && imc < 40) {
+        if (imc >= 30 && imc < 40) {
             return `${this.nome}, seu IMC é ${imc.toFixed(2)} e você está obeso.`;
         }
-        if(imc >= 40) {
+        if (imc >= 40) {
             return `${this.nome}, seu IMC é ${imc.toFixed(2)} e você está com obesidade mórbida.`;
         }
     }
+
+    main() {
+        this.peso = Number(prompt('Digite seu peso em kg: '));
+        this.altura = Number(prompt('Digite sua altura em metros: '));
+        this.nome = prompt('Digite seu nome: ');
+    }
 }
 
-const jose = new Pessoa('José', 70, 1.75);
-console.log(jose.calcularIMC());
-
-const felipe = new Pessoa('Felipe', 92, 1.60);
-console.log(felipe.calcularIMC());
+const felipe = new Pessoa();
+felipe.main();
+alert(felipe.calcularIMC());
