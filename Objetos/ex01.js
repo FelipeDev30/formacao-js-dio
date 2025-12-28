@@ -4,22 +4,18 @@
 Os carros possuem uma marca, uma cor e um gasto médio de combustível por quilômetro rodado.
 Crie um método que dado a quantidade de quilômetros e o preço do combustível nos dê o valor gasto em reais para realizar este percurso.
 
-2 - Crie uma classe para representar uma pessoa.
-Cada pessoa possui um nome e uma carteira de motorista (booleano).
-Crie um método que permita a pessoa dirigir um carro, este método deve receber um carro e a quantidade de quilômetros a serem percorridos.
-Caso a pessoa possua carteira de motorista, o método deve retornar o valor gasto para realizar o percurso, caso contrário deve retornar uma mensagem dizendo que a pessoa não pode dirigir.
-
-*/
+Versão robusta:
 
 class Carro {
-    constructor(marca, cor, gastoMedioPorKM) {
+    constructor(marca, cor, tipoCombustivel, gastoMedioPorKM) {
         this.marca = marca;
         this.cor = cor;
+        this.tipoCombustivel = tipoCombustivel;
         this.gastoMedioPorKM = gastoMedioPorKM;
     }
 
-    calcularGastoPercurso(km, precoCombustivel) {
-        return km * this.gastoMedioPorKM * precoCombustivel;
+    calcularGastoPercurso(distancia, precoCombustivel) {
+        return distancia * this.gastoMedioPorKM * precoCombustivel;
     }
 }
 
@@ -38,9 +34,39 @@ class Pessoa {
     }
 }
 
-// Exemplo de uso:
-const meuCarro = new Carro("Toyota", "Vermelho", 0.1);
-const pessoaComCNH = new Pessoa("João", true);
-const pessoaSemCNH = new Pessoa("Maria", false);
-console.log(pessoaComCNH.dirigir(meuCarro, 150)); // Valor gasto para percorrer 100 km
-console.log(pessoaSemCNH.dirigir(meuCarro, 100)); // A pessoa não pode dirigir.
+const uno = new Carro('Fiat', 'Prata', 'gasolina', 0.12);
+const maria = new Pessoa('Maria', true);
+console.log(maria.dirigir(uno, 70));
+
+*/
+
+class Carro {
+    marca;
+    cor;
+    gastoMedioPorKM;
+
+    constructor(marca, cor,tipoCombustivel, gastoMedioPorKM) {
+        this.marca = marca;
+        this.cor = cor;
+        this.tipoCombustivel = tipoCombustivel;
+        this.gastoMedioPorKM = gastoMedioPorKM;
+    }
+
+    calcularGastoPercurso(distancia, tipoCombustivel, precoCombustivel) {
+        if (tipoCombustivel === 'gasolina') {
+            precoCombustivel = 5.79;
+            return distancia * this.gastoMedioPorKM * precoCombustivel;
+        } else if (tipoCombustivel === 'etanol') {
+            precoCombustivel = 4.09;
+            return distancia * this.gastoMedioPorKM * precoCombustivel;
+        } else if (tipoCombustivel === 'diesel') {
+            precoCombustivel = 3.99;
+            return distancia * (this.gastoMedioPorKM * 1.3) * precoCombustivel;
+        } else {
+            return 'Tipo de combustível inválido.';
+        }
+    }  
+}
+
+fiat = new Carro('Fiat', 'Prata', 'etanol', 0.12);
+console.log(fiat.calcularGastoPercurso(100, 'etanol'));
