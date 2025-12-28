@@ -41,6 +41,6 @@ class Pessoa {
     }
 }
 
-const felipe = new Pessoa();
-felipe.main();
-alert(felipe.calcularIMC());
+const novaPessoa = new Pessoa();
+novaPessoa.main();
+alert(novaPessoa.calcularIMC());
