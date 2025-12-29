@@ -25,9 +25,9 @@ if (media >= 7) {
 const alunos = [];
 
 while (true) {
-  const nome = prompt("Digite o nome do aluno (ou 'sair' para encerrar): ");
+  const nome = prompt("Digite o nome do aluno (ou '0' para encerrar): ");
   if (!nome) continue; // caso usuário apenas aperte Enter/Cancel
-  if (nome.toLowerCase() === 'sair') break;
+  if (nome == "0") break;
 
   const notasDoAluno = [];
   notasDoAluno.push(Number(prompt("Digite a primeira nota de " + nome + ": ")));
@@ -53,3 +53,5 @@ for (let i = 0; i < alunos.length; i++) {
     alert(`${aluno.nome} está Reprovado com média: ${media.toFixed(2)}`);
   }
 }
+
+
