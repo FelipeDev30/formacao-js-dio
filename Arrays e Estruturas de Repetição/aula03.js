@@ -18,5 +18,3 @@ for (let indexi = 0; indexi < notas.length; indexi++) {
     const element = notas[indexi];
     console.log(`Nota ${indexi + 1}:`, element);
 }
-
-console.log('---');
