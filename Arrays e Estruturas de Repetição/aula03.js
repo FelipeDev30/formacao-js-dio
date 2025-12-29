@@ -14,3 +14,9 @@ let media = soma / notas.length;
 
 console.log('Média das notas:', media); // Saída: Média das notas: 7
 
+for (let indexi = 0; indexi < notas.length; indexi++) {
+    const element = notas[indexi];
+    console.log(`Nota ${indexi + 1}:`, element);
+}
+
+console.log('---');
