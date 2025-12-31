@@ -4,8 +4,13 @@ Crie duas funçoes auxiliares uma para receber qualquer entrada do usuário e ou
 
 */
 
+const dados = [5, 50, 10, 98, 23];
+let i = 0;
+
 function gets() {
-    return 10;;
+    const valor = dados[i];
+    i++;
+    return valor;
 }
 
 function print(texto) {
