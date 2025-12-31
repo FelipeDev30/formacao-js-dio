@@ -15,7 +15,7 @@ Exemplo:
         Menor número impar: 1
 */
 
-const { print, gets } = require('./auxiliares-desafio02');
+const {gets, print} = require('./auxiliares02')
 
 
 const n = gets();
