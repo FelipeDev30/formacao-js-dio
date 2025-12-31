@@ -138,7 +138,7 @@ Cada seção contém:
 
 ### 1. Clone o repositório
 ```bash
-git clone https://github.com/seu-usuario/formacao-js-dio.git
+git clone https://github.com/FelipeDev30/formacao-js-dio.git
 cd formacao-js-dio
 ```
 
@@ -259,8 +259,8 @@ formacao-js-dio/
 ## 📞 Contato
 
 **Felipe** - Desenvolvedor em formação
-- 🐙 GitHub: [seu-usuario](https://github.com/FelipeDev30)
-- 💼 LinkedIn: [seu-linkedin](www.linkedin.com/in/luiz-felipe-lamas-da-rosa)
+- 🐙 GitHub: [FelipeDev30](https://github.com/FelipeDev30)
+- 💼 LinkedIn: [Felipe Lamas](www.linkedin.com/in/luiz-felipe-lamas-da-rosa)
 
 ---
 
