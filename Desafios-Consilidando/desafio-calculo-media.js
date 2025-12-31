@@ -18,6 +18,17 @@ const { gets, print } = require("./auxiliares.js");
 media = gets();
 
 
-resultado = media >= 7 ? 'Aprovado': media >= 5 ? 'Recuperação': 'Reprovado';
+if(isNaN(media) || media < 0 || media > 10){
+    print(`Valor inserido invalido.`);
+} else {
+    if(media >= 7)
+        print(`Aluno aprovado comm média ${media}`);
+    else if(media >= 5) {
+        print(`Aluno em recuperação com média ${media}`);
+    } else {
+        print(`Aluno reprovado com média ${media}`);
+    }
+}
 
-print(`Aluno ${resultado} com média ${media}`);
+
+

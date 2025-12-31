@@ -1,4 +1,4 @@
-const entradas = [7];
+const entradas = [4];
 let i = 0;
 
 function gets() {
