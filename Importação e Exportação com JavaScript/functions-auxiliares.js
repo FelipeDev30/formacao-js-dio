@@ -4,11 +4,11 @@ Crie duas funçoes auxiliares uma para receber qualquer entrada do usuário e ou
 
 */
 
-const dados = [5, 50, 10, 98, 23];
+const entradas = [10, 5, 50, 10, 98, 23, 33, 44, 100, 1, 107];
 let i = 0;
 
 function gets() {
-    const valor = dados[i];
+    const valor = entradas[i];
     i++;
     return valor;
 }

@@ -18,13 +18,14 @@ O maior número sorteado é 98
 
 const { gets, print } = require('./functions-auxiliares.js');
 
-let maiorNumero = 0;
+const quantidadeDeAlunos = gets();
+let maiorValorEncontrado = 0;
 
-for(let i = 0; i < 5; i++) {
+for(let i = 0; i < quantidadeDeAlunos; i++) {
     const numeroSorteado = gets();
-    if(numeroSorteado > maiorNumero) {
-        maiorNumero = numeroSorteado;
+    if(numeroSorteado > maiorValorEncontrado) {
+        maiorValorEncontrado = numeroSorteado;
     }
 }
 
-print(`O maior número sorteado é ${maiorNumero}`);
+print(`O maior número sorteado é ${maiorValorEncontrado}`);
