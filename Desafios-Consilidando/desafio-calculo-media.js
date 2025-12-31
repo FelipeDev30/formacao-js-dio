@@ -13,7 +13,7 @@ Saída: Aluno em recuperação! Média: 5.50
 */
 
 
-const { gets, print } = require("./auxiliares.js");
+const { gets, print } = require("./auxiliares-desafio01.js");
 
 media = gets();
 
