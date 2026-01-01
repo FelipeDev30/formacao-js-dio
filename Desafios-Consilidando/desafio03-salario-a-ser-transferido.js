@@ -30,11 +30,11 @@ const {gets, print} = require('./auxiliares03')
 const formatador = new Intl.NumberFormat('pt-BR', {
   style: 'currency',
   currency: 'BRL',
-  minimumFractionDigits: 2 // Garante duas casas decimais
+  minimumFractionDigits: 2 
 });
 
 
-const salarioBruto = gets(); // converte entrada para número
+const salarioBruto = gets(); 
 const beneficios = 250;
 const salarioComBeneficio = salarioBruto + beneficios;
 
@@ -43,7 +43,7 @@ let valorTransferencia;
 function calcularSalario() {
     if (salarioBruto <= 1100) {
       valorTransferencia = salarioComBeneficio - (salarioBruto * 0.05);
-    } else if (salarioBruto <= 2500) { // aqui já implica salarioBruto > 1100
+    } else if (salarioBruto <= 2500) { 
       valorTransferencia = salarioComBeneficio - (salarioBruto * 0.10);
     } else {
       valorTransferencia = salarioComBeneficio - (salarioBruto * 0.15);
