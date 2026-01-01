@@ -35,7 +35,7 @@ const formatador = new Intl.NumberFormat('pt-BR', {
 
 
 const salarioBruto = gets(); 
-const beneficios = 250;
+const beneficios = gets();
 const salarioComBeneficio = salarioBruto + beneficios;
 
 let valorTransferencia;
@@ -43,7 +43,7 @@ let valorTransferencia;
 function calcularSalario() {
     if (salarioBruto <= 1100) {
       valorTransferencia = salarioComBeneficio - (salarioBruto * 0.05);
-    } else if (salarioBruto <= 2500) { 
+    } else if (salarioBruto > 1100 && salarioBruto <= 2500) { 
       valorTransferencia = salarioComBeneficio - (salarioBruto * 0.10);
     } else {
       valorTransferencia = salarioComBeneficio - (salarioBruto * 0.15);
@@ -51,4 +51,4 @@ function calcularSalario() {
 }
 
 calcularSalario();
-print(`O salário que deve ser transferido para o funcionário è ${formatador.format(valorTransferencia)}`);
+print(`O salário que deve ser transferido para o funcionário è ${formatador.format(valorTransferencia)}`); 
