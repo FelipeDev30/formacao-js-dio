@@ -33,7 +33,6 @@ const formatador = new Intl.NumberFormat('pt-BR', {
   minimumFractionDigits: 2 
 });
 
-
 const salarioBruto = gets(); 
 const beneficios = gets();
 const salarioComBeneficio = salarioBruto + beneficios;
@@ -41,7 +40,7 @@ const salarioComBeneficio = salarioBruto + beneficios;
 let valorTransferencia;
 
 function calcularSalario() {
-    if (salarioBruto <= 1100) {
+    if (salarioBruto >= 0 && salarioBruto <= 1100) {
       valorTransferencia = salarioComBeneficio - (salarioBruto * 0.05);
     } else if (salarioBruto > 1100 && salarioBruto <= 2500) { 
       valorTransferencia = salarioComBeneficio - (salarioBruto * 0.10);
