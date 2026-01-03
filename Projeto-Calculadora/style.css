@@ -47,8 +47,9 @@ span {
 }
 
 .buttons {
-    padding:  1rem;
-    background-color: #f2f2f2;;
+    padding: 1rem;
+    background-color: #f2f2f2;
+    ;
     margin-top: -20px;
 }
 
@@ -74,7 +75,25 @@ section {
     cursor: pointer;
 }
 
-.button:hover{
+.button:hover {
     background-color: gray;
     color: #f2f2f2;
+}
+
+.button-clear {
+    position: absolute;
+    margin-left: 120px;
+    margin-top: 300px;
+    border-radius: 4px;
+    width: 80px;
+}
+
+.equal {
+    background-color: darkred;
+    color: #f2f2f2;
+}
+
+.equal:hover {
+    background-color: red;
+    transition: .2s;
 }
