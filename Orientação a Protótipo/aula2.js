@@ -26,5 +26,7 @@ Pessoa.prototype.falar = function () {
 */
 
 const pessoa1 = new Pessoa()
+const pessoa2 = new Pessoa()
 
 pessoa1.falar();
+pessoa2.falar();
