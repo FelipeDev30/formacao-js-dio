@@ -6,8 +6,9 @@ class Pessoa {
         this.idade = idade
     }
 
-    falar() {
-        alert(`Seu nome é: ${pessoa1.nome} e você tem ${pessoa1.idade} anos de idade!`)
+    falar(msg) {
+        msg = alert(`Seu nome é: ${this.nome} e você tem ${this.idade} anos de idade!`)
+        return msg
     }
 }
 
