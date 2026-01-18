@@ -8,10 +8,8 @@ Pessoa.prototype.falar = function() {
 }
 
 const felipe = {
-    genero: 'masculino',
+    genero: 'masculino'
 }
 
-Pessoa.call(felipe, 'Felipe', 31)
-console.log(felipe)
-
-
+const p1 = new Pessoa('Felipe', 31)
+p1.falar();
