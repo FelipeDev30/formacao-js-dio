@@ -73,4 +73,34 @@ Higher-Order Functions  |   Função que recebe e/ou retorna outra função |   
 
 */
 
+// Exemplo prático de First-Class Function
+function saudacao(nome) {
+    return `Olá, ${nome}!`;
+}
 
+const cumprimentar = saudacao;
+console.log(cumprimentar("Maria")); // Olá, Maria!
+
+// Exemplo prático de Higher-Order Function
+function aplicarOperacao(arr, operacao) {
+    const resultado = [];
+    for (let i = 0; i < arr.length; i++) {
+        resultado.push(operacao(arr[i]));
+    }
+    return resultado;
+}
+
+const numeros = [1, 2, 3, 4];
+const dobrar = (x) => x * 2;
+const numerosDobrados = aplicarOperacao(numeros, dobrar);
+console.log(numerosDobrados); // [2, 4, 6, 8]
+
+// Exemplo de Higher-Order Function retornando outra função
+function criarMultiplicador(fator) {
+    return function (numero) {
+        return numero * fator;
+    };
+}
+
+const multiplicarPor5 = criarMultiplicador(5);
+console.log(multiplicarPor5(10)); // 50
