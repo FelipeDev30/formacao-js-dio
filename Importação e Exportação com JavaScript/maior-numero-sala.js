@@ -16,7 +16,7 @@ O maior número sorteado é 98
 
 */
 
-const { gets, print } = require('./functions-auxiliares.js');
+const { gets, print } = require('./funcoes-auxiliares-gets-print.js');
 
 const quantidadeDeAlunos = gets();
 let maiorValorEncontrado = 0;

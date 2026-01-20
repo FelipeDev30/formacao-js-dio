@@ -1,4 +1,4 @@
-const {gets, print } = require("./auxiliares03")
+const {gets, print } = require("./auxiliares-salario")
 
 const salarioBruto = gets();
 const beneficios = gets();

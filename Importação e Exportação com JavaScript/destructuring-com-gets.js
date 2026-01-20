@@ -7,7 +7,7 @@ de forma mais simples e rápida.
 
 */
 
-const { print, gets } = require('./functions-auxiliares.js');
+const { print, gets } = require('./funcoes-auxiliares-gets-print.js');
 
 
 print( `O numero dentro da gets é: ${gets()}`);

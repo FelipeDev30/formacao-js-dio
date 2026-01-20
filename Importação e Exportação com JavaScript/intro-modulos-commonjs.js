@@ -4,7 +4,7 @@ Importação e exportação em JavaScript.
 
 */
 
-const funcoes = require('./functions-auxiliares.js');
+const funcoes = require('./funcoes-auxiliares-gets-print.js');
 
 const print = funcoes.print;
 const gets = funcoes.gets;
