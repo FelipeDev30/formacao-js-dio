@@ -1,4 +1,27 @@
 /* 
+═══════════════════════════════════════════════════════════════════════════
+    📚 GUIA DE ESTUDO: SISTEMA DE NOTAS DE MÚLTIPLOS ALUNOS
+═══════════════════════════════════════════════════════════════════════════
+    Descrição: Calculadora de médias escolares para vários alunos
+    
+    📖 TÓPICOS ABORDADOS:
+    1. Arrays de objetos
+    2. Estrutura de repetição while
+    3. Coleta de dados via prompt
+    4. Cálculo e classificação de médias
+    5. Estruturas condicionais aninhadas
+    
+    📌 CRITÉRIOS DE APROVAÇÃO:
+    • Média >= 7.0  → Aprovado ✅
+    • Média >= 5.0  → Recuperação ⚠️
+    • Média < 5.0   → Reprovado ❌
+    
+    ⚠️ Este código roda no NAVEGADOR (usa prompt/alert)
+═══════════════════════════════════════════════════════════════════════════
+*/
+
+/* 
+═══ 💡 VERSÃO SIMPLIFICADA (COMENTADA) ═══
 
 const notas = [];
 notas.push(Number(prompt("Digite a primeira nota: ")));
@@ -19,8 +42,9 @@ if (media >= 7) {
 } else {
   alert("Reprovado com média: " + media.toFixed(2));
 }
-
 */
+
+console.log('\n═══ 📊 SISTEMA DE NOTAS - MÚLTIPLOS ALUNOS ═══\n');
 
 const alunos = [];
 
@@ -40,6 +64,8 @@ while (true) {
 
   alunos.push({ nome, media: mediaAluno });
 }
+
+console.log('\n═══ 📋 RESULTADO DAS AVALIAÇÕES ═══\n');
 
 for (let i = 0; i < alunos.length; i++) {
   const aluno = alunos[i];

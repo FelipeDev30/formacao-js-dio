@@ -1,3 +1,23 @@
+/* 
+═══════════════════════════════════════════════════════════════════════════
+    📚 GUIA DE ESTUDO: THIS E MÉTODOS DE OBJETO
+═══════════════════════════════════════════════════════════════════════════
+    Descrição: Comportamento do this em diferentes contextos
+    
+    📖 TÓPICOS ABORDADOS:
+    • Palavra-chave this
+    • Funções tradicionais vs arrow functions
+    • This em métodos de objetos
+    • Contexto léxico vs contexto dinâmico
+    
+    📌 DIFERENÇAS PRINCIPAIS:
+    • Função tradicional: this depende de COMO a função é chamada
+    • Arrow function: this é herdado do escopo onde foi definida (léxico)
+═══════════════════════════════════════════════════════════════════════════
+*/
+
+console.log('\n═══ 🔍 DEMONSTRAÇÃO DO THIS ═══\n');
+
 function funcao1() {
     console.log(this);
 }

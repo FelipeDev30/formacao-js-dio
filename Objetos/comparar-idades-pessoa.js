@@ -1,3 +1,26 @@
+/* 
+═══════════════════════════════════════════════════════════════════════════
+    📚 GUIA DE ESTUDO: COMPARAÇÃO DE OBJETOS
+═══════════════════════════════════════════════════════════════════════════
+    Descrição: Comparando propriedades entre objetos
+    
+    📖 TÓPICOS ABORDADOS:
+    1. Classes e propriedades calculadas
+    2. Funções que recebem objetos como parâmetros
+    3. Comparação de valores entre objetos
+    4. Estruturas condicionais para comparação
+    5. Cálculo de ano de nascimento
+    
+    📌 FUNCIONALIDADES:
+    • Criar pessoas com nome e idade
+    • Calcular ano de nascimento automaticamente
+    • Comparar idades entre duas pessoas
+    • Exibir quem é mais velho
+═══════════════════════════════════════════════════════════════════════════
+*/
+
+console.log('\n═══ 👥 COMPARADOR DE IDADES ═══\n');
+
 class Pessoa {
     constructor(nome, idade) {
         this.nome = nome;

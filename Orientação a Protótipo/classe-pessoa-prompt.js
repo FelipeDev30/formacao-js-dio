@@ -1,3 +1,27 @@
+/* 
+═══════════════════════════════════════════════════════════════════════════
+    📚 GUIA DE ESTUDO: CLASSE COM ENTRADA DO USUÁRIO
+═══════════════════════════════════════════════════════════════════════════
+    Descrição: Classe Pessoa com captura de dados via prompt
+    
+    📖 TÓPICOS ABORDADOS:
+    • Classes ES6
+    • Constructor com prompt
+    • Métodos de instância
+    • Captura de entrada do usuário
+    • Exibição com alert
+    • Múltiplas instâncias de objetos
+    
+    📌 FUNCIONALIDADE:
+    Cria objetos Pessoa coletando nome e idade diretamente
+    do usuário no momento da instanciação.
+    
+    ⚠️ Este código roda no NAVEGADOR (usa prompt/alert)
+═══════════════════════════════════════════════════════════════════════════
+*/
+
+console.log('\n═══ 👤 CLASSE PESSOA INTERATIVA ═══\n');
+
 class Pessoa {
     constructor(nome, idade) {
         nome = prompt('Informe seu nome: ')

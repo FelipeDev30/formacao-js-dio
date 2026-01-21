@@ -1,10 +1,32 @@
 /* 
+═══════════════════════════════════════════════════════════════════════════
+    📚 GUIA DE ESTUDO: CLASSES E CÁLCULOS DE CUSTO
+═══════════════════════════════════════════════════════════════════════════
+    Descrição: Calculadora de custo de percurso para carros
+    
+    📖 EXERCÍCIO:
+    1 - Crie uma classe para representar um carro.
+    Os carros possuem uma marca, uma cor e um gasto médio de combustível
+    por quilômetro rodado.
+    Crie um método que dado a quantidade de quilômetros e o preço do
+    combustível nos dê o valor gasto em reais para realizar este percurso.
+    
+    📖 TÓPICOS ABORDADOS:
+    • Classes e propriedades
+    • Métodos de instância
+    • Cálculos com tipos de combustível
+    • Estruturas condicionais
+    • Retorno de valores
+    
+    💡 VERSÃO AVANÇADA (COMENTADA):
+    Inclui classe Pessoa e método dirigir para interação entre objetos
+═══════════════════════════════════════════════════════════════════════════
+*/
 
-1 - Crie uma classe para representar um carro.
-Os carros possuem uma marca, uma cor e um gasto médio de combustível por quilômetro rodado.
-Crie um método que dado a quantidade de quilômetros e o preço do combustível nos dê o valor gasto em reais para realizar este percurso.
+console.log('\n═══ 🚗 CALCULADORA DE CUSTO DE PERCURSO ═══\n');
 
-Versão robusta:
+/* 
+═══ 💼 VERSÃO ROBUSTA - COMENTADA ═══
 
 class Carro {
     constructor(marca, cor, tipoCombustivel, gastoMedioPorKM) {
@@ -37,8 +59,9 @@ class Pessoa {
 const uno = new Carro('Fiat', 'Prata', 'gasolina', 0.12);
 const maria = new Pessoa('Maria', true);
 console.log(maria.dirigir(uno, 70));
-
 */
+
+console.log('═══ 🔧 VERSÃO IMPLEMENTADA ═══\n');
 
 class Carro {
     marca;
@@ -69,4 +92,4 @@ class Carro {
 }
 
 fiat = new Carro('Fiat', 'Prata', 'etanol', 0.12);
-console.log(fiat.calcularGastoPercurso(100, 'etanol'));
+console.log('Custo do percurso:', fiat.calcularGastoPercurso(100, 'etanol'));

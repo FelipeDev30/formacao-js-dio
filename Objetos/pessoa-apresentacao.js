@@ -1,3 +1,27 @@
+/* 
+═══════════════════════════════════════════════════════════════════════════
+    📚 GUIA DE ESTUDO: CLASSES E MÉTODOS EM JAVASCRIPT
+═══════════════════════════════════════════════════════════════════════════
+    Descrição: Criando classes com métodos de apresentação
+    
+    📖 TÓPICOS ABORDADOS:
+    1. Declaração de classes
+    2. Constructor (construtor)
+    3. Propriedades de instância
+    4. Métodos de instância
+    5. Instanciação de objetos
+    6. Template strings
+    
+    📌 CONCEITOS:
+    • Classes são moldes para criar objetos
+    • Constructor inicializa as propriedades
+    • Métodos definem comportamentos
+    • this referencia a instância atual
+═══════════════════════════════════════════════════════════════════════════
+*/
+
+console.log('\n═══ 👤 SISTEMA DE APRESENTAÇÃO DE PESSOAS ═══\n');
+
 class Pessoa {
     constructor(nome, idade, profissao) {
         this.nome = nome;

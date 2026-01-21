@@ -1,28 +1,39 @@
 /* 
-
-Faça um programa que calcule e imprima o salário a ser transferido para um funcionário.
-
-Para realizar o calculo receba o valor bruto do salário e o adicional dos beneficios
-
-O salário a ser transferido e calculado da seguinte maneira:
-
-valor bruto do salário - percentual de imposto mediante a faixa salarial + adicional dos beneficios
-
-Para calcular o percentual de imposto segue as aliquotas:
-
-De R$: 0.00 a R$ 1100.00 = 5.00%
-De R$: 1100.01 a R$: 2500.00 = 10.00%
-Maior que R$: 2500.00 = 15.00%
-
-Entrada:
-
-2000
-250
-
-Saida:
-
-2050.00
-
+═══════════════════════════════════════════════════════════════════════════
+    📚 DESAFIO: CÁLCULO DE SALÁRIO FORMATADO
+═══════════════════════════════════════════════════════════════════════════
+    Descrição: Calcular salário líquido com formatação monetária
+    
+    📖 ENUNCIADO:
+    Faça um programa que calcule e imprima o salário a ser transferido
+    para um funcionário.
+    
+    Para realizar o cálculo receba:
+    • Valor bruto do salário
+    • Adicional dos benefícios
+    
+    📌 FÓRMULA:
+    Salário a transferir = Salário Bruto - Imposto + Benefícios
+    
+    📊 ALÍQUOTAS DE IMPOSTO:
+    • R$ 0,00 a R$ 1.100,00     → 5,00%
+    • R$ 1.100,01 a R$ 2.500,00 → 10,00%
+    • Maior que R$ 2.500,00     → 15,00%
+    
+    📌 EXEMPLO:
+    Entrada:
+        2000
+        250
+    Saída:
+        2050.00
+    
+    📖 TÓPICOS ABORDADOS:
+    • Formatação de valores monetários (Intl.NumberFormat)
+    • Cálculo de impostos por faixas
+    • Funções para organização de código
+    • Estruturas condicionais
+    • Import/require de módulos
+═══════════════════════════════════════════════════════════════════════════
 */
 
 const {gets, print} = require('./auxiliares-salario')

@@ -1,8 +1,14 @@
 /* 
-
-Faça um programa quee receba N (quantidade de números) e seus respectivos valores e imprima o maior número par e o menor número impar
-
-Exemplo: 
+═══════════════════════════════════════════════════════════════════════════
+    📚 DESAFIO: MAIOR PAR E MENOR ÍMPAR
+═══════════════════════════════════════════════════════════════════════════
+    Descrição: Encontrar o maior número par e o menor número ímpar
+    
+    📖 ENUNCIADO:
+    Faça um programa que receba N (quantidade de números) e seus respectivos
+    valores e imprima o maior número par e o menor número ímpar.
+    
+    📌 EXEMPLO:
     Entradas:
         5
         3
@@ -10,9 +16,18 @@ Exemplo:
         1
         10
         8
-    Saida:
+    Saída:
         Maior número par: 10
-        Menor número impar: 1
+        Menor número ímpar: 1
+    
+    📖 TÓPICOS ABORDADOS:
+    • Estruturas de repetição (for)
+    • Verificação de paridade (% 2)
+    • Comparação de valores
+    • Manipulação de valores null
+    • Import/require de módulos
+    • Validação de números (isNaN)
+═══════════════════════════════════════════════════════════════════════════
 */
 
 const {gets, print} = require('./auxiliares-par-impar')

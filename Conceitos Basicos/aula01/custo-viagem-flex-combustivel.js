@@ -1,16 +1,32 @@
 /* 
-
-# Faça um programa para calcular o valor de uma viagem.
-
-Você terá 5 variáveis. Sendo elas:
-1 - Preço da gasolina;
-2 - Preço do etanol;
-3 - O tipo de combustível que está no seu carro;
-4 - Gasto médio de combustível do carro por KM;
-5 - Distância em KM da viagem.
-
+═══════════════════════════════════════════════════════════════════════════
+    📚 GUIA DE ESTUDO: CALCULADORA DE CUSTO DE VIAGEM - FLEX
+═══════════════════════════════════════════════════════════════════════════
+    Descrição: Calcule o valor de uma viagem com combustível flex
+    
+    📖 FUNCIONALIDADE:
+    Programa para calcular o custo de uma viagem considerando:
+    
+    📌 VARIÁVEIS NECESSÁRIAS:
+    1. Preço da gasolina
+    2. Preço do etanol
+    3. Tipo de combustível no carro
+    4. Gasto médio de combustível por KM
+    5. Distância em KM da viagem
+    
+    📖 TÓPICOS ABORDADOS:
+    • Estruturas condicionais (if/else)
+    • Validação de entrada do usuário
+    • Conversão de tipos (Number)
+    • Manipulação de strings (trim, toLowerCase)
+    • Formatação de valores monetários (Intl.NumberFormat)
+    • Tratamento de erros
+    
+    ⚠️ Este código roda no NAVEGADOR (usa prompt/alert)
+═══════════════════════════════════════════════════════════════════════════
 */
 
+console.log('\n═══ ⛽ CALCULADORA DE CUSTO DE VIAGEM - FLEX ═══\n');
 
 const precoGasolina = 5.79;
 const precoEtanol = 4.58;
