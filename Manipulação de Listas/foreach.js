@@ -19,6 +19,16 @@
     ⚠️ Este código roda no NAVEGADOR (usa console.log)
 ═══════════════════════════════════════════════════════════════════════════
 
+O metódo forEach é uma forma eficiente e legível de iterar sobre arrays em JavaScript, permitindo executar uma função para cada elemento da lista.
+
+Callback function: A função que é passada para o forEach e é executada para cada elemento do array.
+
+Ela pode receber até três parâmetros:
+
+1. elemento: O elemento atual sendo processado no array.
+2. índice (opcional): O índice do elemento atual.
+3. array (opcional): O array original sobre o qual o forEach está sendo chamado.
+
 */
 
 console.log('\n═══ 🔄 USANDO forEach PARA ITERAR SOBRE LISTAS ═══\n');
