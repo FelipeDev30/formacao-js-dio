@@ -65,3 +65,28 @@ numeros.forEach((numero) => {
     numerosMultiplicados.push(numero * 2);
 });
 console.log('Números multiplicados por 2:', numerosMultiplicados);
+
+// Comparação entre forEach e for tradicional
+// Demonstra como o forEach funciona internamente e sua equivalência com o loop for
+console.log('\n═══ 🔄 COMPARANDO forEach COM for TRADICIONAL ═══\n');
+
+const lista = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+// Definição de uma função callback que será usada em ambos os exemplos
+const cb = (value, i, listRef) => {
+    console.log(value, i);
+}
+
+// Usando forEach com a função callback
+console.log('Usando forEach:');
+lista.forEach(cb);
+
+// Implementação manual do comportamento do forEach usando for tradicional
+console.log('\nImplementação simples do forEach usando for:\n');
+
+for(let i = 0; i < lista.length; i++) {
+    const element = lista[i];
+    cb(element, i, lista);
+}
+
+console.log('\n═══ ✅ FIM DA MANIPULAÇÃO DE LISTAS ═══\n');

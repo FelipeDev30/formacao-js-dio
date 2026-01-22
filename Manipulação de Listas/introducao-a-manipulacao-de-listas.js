@@ -22,7 +22,6 @@
 
 
 */
-
 console.log('\n═══ 📋 MANIPULAÇÃO DE LISTAS EM JAVASCRIPT ═══\n')
 
 // 1. Criação de uma lista
