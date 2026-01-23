@@ -50,3 +50,17 @@ console.log('Lista inicial de palavras:', palavras);
 // Uso do join para concatenar as palavras em uma frase, separadas por espaço
 let frase = palavras.join(' ');
 console.log('Frase concatenada:', frase);
+
+console.log('\n═══ 📜 COMBINAÇÃO DE MÉTODOS ═══\n')
+
+const lista = [{nome: 'Felipe'}, {nome: 'João'}, {nome: 'Silva'}, {nome: 'Fernando'}];
+
+console.log(lista.map(e=> e.nome)
+    .filter((e) => e.startsWith('F'))
+    .join('; '));
+// Saída: Felipe; Fernando
+
+const elementosEmHtml = lista.map(e=> e.nome)
+    .join('</li><li>');
+console.log('<ul><li>' + elementosEmHtml + '</li></ul>');
+// Saída: <ul><li>Felipe</li><li>João</li><li>Silva</li><li>Fernando</li></ul>
