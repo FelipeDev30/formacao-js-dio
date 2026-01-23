@@ -29,6 +29,21 @@ Estados das Promises:
 
 console.log('\n═══ ⏳ FUNCIONAMENTO DAS PROMISES EM JAVASCRIPT ═══\n');
 
+// Criação de uma Promise que resolve com um número aleatório após 1 segundo
+
+const promessaDeNumeroQualquer = new Promise((resolve, reject) => {
+    const numero = Math.random() * 100;
+    resolve(numero.toFixed(2));
+});
+
+promessaDeNumeroQualquer.then((value) => {
+    console.log(value);
+}).catch((error) => {
+    console.error(error);
+}).finally(() => {
+    console.log('Promessa de número qualquer finalizada.');
+});
+
 // Função que retorna uma Promise simulando uma operação assíncrona
 function operacaoAssincrona() {
     return new Promise((resolve, reject) => {
